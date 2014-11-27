@@ -27,7 +27,7 @@
 				<fieldset>
 
 					<div class="form-group">
-						<?php echo $this->Form->input('username', array('class' => 'form-control')); ?>
+						<?php echo $this->Form->input('username', array('class' => 'form-control', 'type' => 'Text')); ?>
 					</div><!-- .form-group -->
 					<div class="form-group">
 						<?php echo $this->Form->input('password', array('class' => 'form-control')); ?>
@@ -39,18 +39,7 @@
 						<?php echo $this->Form->input('role', array('options' => array('admin' => 'Admin', 'membre' => 'Membre'))); ?>
 					</div><!-- .form-group -->
 					
-					<div class="form-group">
-					<!-- Arrive pas a la faire marcher
-					<img id="captcha" src="/securimage/securimage_show.php" alt="CAPTCHA Image" />
-					<input type="text" name="captcha_code" size="10" maxlength="6" />
-					<a href="#" onclick="document.getElementById('captcha').src = '/securimage/securimage_show.php?' + Math.random(); return false">[ Different Image ]</a> -->
 					
-					<?php 
-					 echo $this->Form->input('Captcha', array('class' => 'form-control')); 
-					 echo "Veuillez entré ce chiffre : 696 ."
-					?>
-					
-					</div><!-- .form-group -->
 					
 					<?php echo $this->Form->submit('Submit', array('class' => 'btn btn-large btn-primary')); ?>
 

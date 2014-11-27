@@ -28,7 +28,7 @@
 App::uses('I18nRoute', 'I18n.Routing/Route');
 
 Router::connect('/',
-	array('controller' => 'login', 'action' => 'index'),
+	array('controller' => 'Events', 'action' => 'index'),
 	array('routeClass' => 'I18nRoute')
 );
 Router::connect('/pages/*',
