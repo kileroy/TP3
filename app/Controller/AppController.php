@@ -39,7 +39,10 @@ class AppController extends Controller {
         'Session',
         'Auth' => array(
             'loginRedirect' => array('controller' => 'Articles', 'action' => 'index'),
-            'logoutRedirect' => array('controller' => 'Articles', 'action' => 'index')
+            'logoutRedirect' => array('controller' => 'Articles', 'action' => 'index'),
+            'authenticate' => array(
+                'Form' => array(
+                    'passwordHasher' => 'Blowfish'))
         )
     );
     public function beforeFilter() {

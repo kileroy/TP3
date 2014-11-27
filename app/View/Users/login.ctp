@@ -3,7 +3,7 @@
 <?php echo $this->Form->create('User'); ?>
     <fieldset>
         <legend>
-            <?php echo __('S\'il ous plait entrez votre pseudonyme et votre mot de pass'); ?>
+            <?php echo __('Entrez votre pseudonyme et votre mot de pass'); ?>
         </legend>
         <?php echo $this->Form->input('username');
         echo $this->Form->input('password');
